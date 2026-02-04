@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Universal Document Fetcher</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<h1>🌐 Universal Fetcher</h1>
+<p class="subtitle">Google Docs · GitHub · Raw Files · Websites</p>
+
+<div class="box">
+  <h2>Input URL</h2>
+  <textarea id="urlInput" placeholder="Paste any public URL here..."></textarea>
+
+  <label>Format (auto for most sites):</label>
+  <select id="format">
+    <option value="auto">Auto</option>
+    <option value="txt">Text</option>
+    <option value="html">HTML</option>
+    <option value="pdf">PDF (Google Docs)</option>
+  </select>
+
+  <button onclick="fetchContent()">Fetch</button>
+
+  <h2>Output</h2>
+  <textarea id="output" placeholder="Fetched content will appear here..."></textarea>
+
+  <div class="buttons">
+    <button onclick="copyOutput()">Copy</button>
+    <button onclick="downloadFile('txt')">Download TXT</button>
+    <button onclick="downloadFile('html')">Download HTML</button>
+  </div>
+</div>
+
+<script src="js/utils.js"></script>
+<script src="js/fetcher.js"></script>
+</body>
+</html>
