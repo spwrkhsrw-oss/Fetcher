@@ -1,0 +1,52 @@
+body {
+  background: #0b0b0b;
+  color: #00ff99;
+  font-family: monospace;
+  padding: 20px;
+}
+
+h1 {
+  text-align: center;
+}
+
+.subtitle {
+  text-align: center;
+  color: #aaa;
+}
+
+.box {
+  max-width: 900px;
+  margin: auto;
+}
+
+textarea {
+  width: 100%;
+  height: 220px;
+  background: #111;
+  color: #0f0;
+  border: 1px solid #333;
+  padding: 12px;
+  resize: vertical;
+}
+
+select, button {
+  margin-top: 10px;
+  padding: 10px;
+  background: #00ff99;
+  border: none;
+  font-size: 14px;
+}
+
+button {
+  cursor: pointer;
+}
+
+button:hover {
+  background: #00cc77;
+}
+
+.buttons {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
